@@ -201,7 +201,6 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public void onLocationChanged(Location location) {
-        // Checking the validity of longitude and latitude whenever location changes.
         if (location != null) {
             originLocation = location;
             setCameraPosition(location);
